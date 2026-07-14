@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 ml-dsa = { version = "0.1.1", features = ["getrandom"] }
+sha3 = "0.10"
 
 [profile.release]
 opt-level = 3
