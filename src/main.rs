@@ -3,6 +3,7 @@ use std::fs::File;
 use std::io::{Write, Read};
 use std::fmt;
 use std::time::{SystemTime, UNIX_EPOCH};
+mod merkle;
 use sha3::{Digest, Sha3_256};
 
 // Deterministic FIPS 204 System Constraints
