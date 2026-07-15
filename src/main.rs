@@ -49,7 +49,7 @@ impl From<std::io::Error> for SubstrateError {
 fn unix_now() -> u64 {
     SystemTime::now()
         .duration_since(UNIX_EPOCH)
-        .expect("system clock before unix epoch")
+        .unwrap_or(std::time::Duration::ZERO)
         .as_secs()
 }
 
